@@ -1,3 +1,10 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using MongoDB.Driver;
+using VitalTrackAI.Api.Configurations;
+using VitalTrackAI.Api.Data;
+using VitalTrackAI.Api.Models.Identity;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,7 +12,32 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
+builder.Services.AddDbContext<VitalTrackAi_DbContext>(options => 
+    options.UseNpgsql(builder.Configuration.GetConnectionString("VitalTrackAi_DbContext")));
 
+builder.Services.Configure<MongoSettings>(builder.Configuration.GetSection("MongoSettings"));
+builder.Services.AddSingleton<IMongoClient>(sp =>
+{
+    var settings = builder.Configuration.GetSection("MongoSettings").Get<MongoSettings>();
+    return new MongoClient(settings.ConnectionString);
+});
+
+builder.Services.AddScoped<IMongoDatabase>(sp =>
+{
+    var settings = builder.Configuration.GetSection("MongoSettings").Get<MongoSettings>();
+    var client = sp.GetRequiredService<IMongoClient>();
+    return client.GetDatabase(settings.DatabaseName);
+});
+
+
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<VitalTrackAi_DbContext>()
+    .AddDefaultTokenProviders();
+
+builder.Services.AddAuthentication()
+    .AddCookie();
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 

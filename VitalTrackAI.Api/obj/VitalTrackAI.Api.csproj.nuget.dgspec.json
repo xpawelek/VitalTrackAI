@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pault\\RiderProjects\\VitalTrackAI\\VitalTrackAI.Api\\VitalTrackAI.Api.csproj": {}
+    "C:\\Users\\pault\\RiderProjects\\VitalTrackAI\\VitalTrackAi.Api\\VitalTrackAI.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pault\\RiderProjects\\VitalTrackAI\\VitalTrackAI.Api\\VitalTrackAI.Api.csproj": {
+    "C:\\Users\\pault\\RiderProjects\\VitalTrackAI\\VitalTrackAi.Api\\VitalTrackAI.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pault\\RiderProjects\\VitalTrackAI\\VitalTrackAI.Api\\VitalTrackAI.Api.csproj",
+        "projectUniqueName": "C:\\Users\\pault\\RiderProjects\\VitalTrackAI\\VitalTrackAi.Api\\VitalTrackAI.Api.csproj",
         "projectName": "VitalTrackAI.Api",
-        "projectPath": "C:\\Users\\pault\\RiderProjects\\VitalTrackAI\\VitalTrackAI.Api\\VitalTrackAI.Api.csproj",
+        "projectPath": "C:\\Users\\pault\\RiderProjects\\VitalTrackAI\\VitalTrackAi.Api\\VitalTrackAI.Api.csproj",
         "packagesPath": "C:\\Users\\pault\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pault\\RiderProjects\\VitalTrackAI\\VitalTrackAI.Api\\obj\\",
+        "outputPath": "C:\\Users\\pault\\RiderProjects\\VitalTrackAI\\VitalTrackAi.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Facebook": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.7, )"
@@ -58,6 +66,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.3, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.4.1, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",

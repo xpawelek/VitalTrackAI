@@ -1,4 +1,6 @@
-﻿namespace VitalTrackAI.Api.Entities.Postgre;
+﻿using VitalTrackAI.Api.Models.Identity;
+
+namespace VitalTrackAI.Api.Entities.Postgre;
 
 public class SecurityLog
 {
@@ -8,4 +10,5 @@ public class SecurityLog
     public string IpAddress { get; set; }
     public string DeviceInfo { get; set; }
     public DateTime TimeStamp { get; set; }
+    public ApplicationUser User { get; set; }
 }

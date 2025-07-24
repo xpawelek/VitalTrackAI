@@ -7,15 +7,19 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="8.0.7" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.0.7" />
         <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.7" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />
+        <PackageReference Include="MongoDB.Driver" Version="3.4.1" />
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Controllers\" />
-      <Folder Include="Models\Identity\" />
+      <Folder Include="Models\DTOs\" />
+      <Folder Include="Models\Mappers\" />
       <Folder Include="Services\" />
     </ItemGroup>
 

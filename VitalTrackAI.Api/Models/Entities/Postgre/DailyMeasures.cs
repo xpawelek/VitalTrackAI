@@ -1,4 +1,6 @@
-﻿namespace VitalTrackAI.Api.Entities.Postgre;
+﻿using VitalTrackAI.Api.Models.Identity;
+
+namespace VitalTrackAI.Api.Entities.Postgre;
 
 public class DailyMeasures
 {
@@ -14,4 +16,6 @@ public class DailyMeasures
     public int SubjectiveMood { get; set; }
     public int Steps { get; set; }
     public string DailyHealthNotes { get; set; }
+    public int UserId { get; set; }
+    public ApplicationUser User { get; set; }
 }
