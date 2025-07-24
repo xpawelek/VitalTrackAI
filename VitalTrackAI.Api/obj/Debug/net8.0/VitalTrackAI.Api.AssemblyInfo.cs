@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VitalTrackAI.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33dc20693b4c4ff5bcd57b383e95683cdb4d9817")]
 [assembly: System.Reflection.AssemblyProductAttribute("VitalTrackAI.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VitalTrackAI.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
