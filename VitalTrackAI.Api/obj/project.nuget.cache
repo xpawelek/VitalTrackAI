@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x6Qw641afr5L8IKftCfaFOcMfvK6bccrBvPN25/drSkkD4EyJefZnqOpu6hPzrL75Fwf7klFeTAtCziipq7dmg==",
+  "dgSpecHash": "X5mP5X8wf58=",
   "success": true,
-  "projectFilePath": "C:\\Users\\pault\\RiderProjects\\VitalTrackAI\\VitalTrackAi.Api\\VitalTrackAI.Api.csproj",
+  "projectFilePath": "C:\\Users\\pault\\RiderProjects\\VitalTrackAI\\VitalTrackAI.Api\\VitalTrackAI.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pault\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\pault\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
