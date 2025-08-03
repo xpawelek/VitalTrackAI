@@ -26,11 +26,8 @@
     "@angular/forms": "^20.1.0",
     "@angular/platform-browser": "^20.1.0",
     "@angular/router": "^20.1.0",
-<<<<<<< HEAD
     "@ngneat/tailwind": "^7.0.3",
     "@tailwindcss/cli": "^4.1.11",
-=======
->>>>>>> 596619c (temporary commit before Angular update)
     "@tailwindcss/postcss": "^4.1.11",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
